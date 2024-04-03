@@ -47,7 +47,7 @@
 }
 body
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px;
 	font-weight: 400;
 	background: #FFFFFF;
@@ -68,7 +68,7 @@ ul
 }
 p
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px;
 	line-height: 1.71;
 	font-weight: 400;
@@ -129,7 +129,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-weight: 700;
 	color: #000000;
 	-webkit-font-smoothing: antialiased;
@@ -443,7 +443,7 @@ section
 }
 .logo_text
 {
-	font-family: 'Poppins', serif;
+	font-family: Consolas;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 0.75;
@@ -558,35 +558,35 @@ section
 }
 .header_search_input::-webkit-input-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 }
 .header_search_input:-moz-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 }
 .header_search_input::-moz-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 } 
 .header_search_input:-ms-input-placeholder
 { 
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 }
 .header_search_input::input-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
@@ -615,7 +615,7 @@ section
 	width: 40px;
 	height: 40px;
 	text-align: center;
-	margin-left: 38px;
+	margin-left: 34px;
 	cursor: pointer;
 	background: #f1f1f1;
 	border-radius: 50%;
@@ -752,7 +752,7 @@ section
 }
 .menu_nav ul li a
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: rgba(0,0,0,1);
@@ -808,35 +808,35 @@ section
 }
 .menu .search_input::-webkit-input-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 }
 .menu .search_input:-moz-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 }
 .menu .search_input::-moz-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 } 
 .menu .search_input:-ms-input-placeholder
 { 
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
 }
 .menu .search_input::input-placeholder
 {
-	font-family: 'Poppins', sans-serif;
+	font-family: Consolas;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 	color: rgba(0,0,0,0.15) !important;
@@ -965,7 +965,7 @@ section
 .home_button a
 {
 	display: block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -1121,7 +1121,7 @@ section
 }
 .course_title a
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 20px;
 	font-weight: 700;
 	color: #000000;
@@ -1162,7 +1162,7 @@ section
 .course_info ul li:not(:last-child)::after
 {
 	display: inline-block;
-	font-family: 'FontAwesome';
+	font-family: Consolas;
 	color: #b8b8b8;
 	font-size: 4px;
 	margin-left: 7px;
@@ -1290,7 +1290,7 @@ section
 }
 .instructor_name a
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 20px;
 	color: rgba(0,0,0,0.9);
 	font-weight: 700;
@@ -1365,7 +1365,7 @@ section
 }
 .register_form_title
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 20px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.9);
@@ -1494,7 +1494,7 @@ section
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 12px;
 	font-weight: 700;
 	border: none;
@@ -1523,7 +1523,7 @@ section
 }
 .register_timer_title
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 30px;
 	color: #000000;
 	font-weight: 700;
@@ -1548,7 +1548,7 @@ section
 }
 .timer_num
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 0.75;
@@ -1604,7 +1604,7 @@ section
 }
 .event_day
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 40px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.9);
@@ -1612,7 +1612,7 @@ section
 }
 .event_month
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 10px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1633,7 +1633,7 @@ section
 }
 .event_title a
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 20px;
 	font-weight: 700;
 	color: #000000;
@@ -1677,7 +1677,7 @@ section
 }
 .blog_title
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 30px;
 	font-weight: 700;
 	color: #000000;
@@ -1811,7 +1811,7 @@ section
 }
 .blog_right_title a
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Consolas;
 	font-size: 30px;
 	color: #000000;
 	font-weight: 700;
