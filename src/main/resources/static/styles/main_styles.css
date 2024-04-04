@@ -2136,7 +2136,8 @@ section
 	font-size: 12px;
 	font-weight: 600;
 	color: rgba(255,255,255,0.2);
-	margin-right: 81px;
+	margin-right: 20px;
+	font-family: Consolas;
 }
 .cr_title
 {
