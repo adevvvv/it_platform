@@ -279,10 +279,12 @@ section
 }
 .top_bar_content
 {
-	height: 49px;
-	font-size: 12px;
-	color: rgba(0,0,0,0.4);
-	font-weight: 600;
+.top_bar_text
+{
+	font-family: Consolas;
+	font-size: 10px;
+	color: #2e21df;
+}
 }
 .top_bar_phone
 {
@@ -411,7 +413,7 @@ section
 }
 .header.scrolled .header_content
 {
-	height: 80px;
+	height: 92px;
 }
 
 /*********************************
