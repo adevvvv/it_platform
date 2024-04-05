@@ -8,4 +8,24 @@ public class GuideController {
     public String guide () {
         return "guide";
     }
+
+    @GetMapping("/guide/spring")
+    public String guideSpring () {
+        return "guide_spring";
+    }
+
+    @GetMapping("/guide/spring/first-app")
+    public String guideSpringFirstApp () {
+        return "guide_spring_first-app";
+    }
+
+    @GetMapping("/guide/spring/auth-jwt")
+    public String guideSpringAuthJwt () {
+        return "guide_spring_auth-jwt";
+    }
+
+    @GetMapping("/guide/postgresql")
+    public String guidePostgresql () {
+        return "guide_postgresql";
+    }
 }
