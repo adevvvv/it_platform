@@ -13,6 +13,13 @@
     <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="/styles/course.css">
     <link rel="stylesheet" type="text/css" href="/styles/course_responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
 
@@ -52,8 +59,8 @@
                                 <div class="row">
                                     <div class="col-lg-9">
                                         <div class="tabs d-flex flex-row align-items-center justify-content-start">
-                                            <div class="tab active">roadmap</div>
-                                            <!--											<div class="tab">задачи</div>-->
+                                            <div class="tab active">документация</div>
+<!--                                            <div class="tab">commands</div>-->
                                             <!--											<div class="tab">вопросы</div>-->
                                         </div>
                                     </div>
@@ -95,6 +102,15 @@
                                                 <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
                                                 <br>
                                                 <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                                <pre><code class="language-java">
+@Controller
+public class RoadmapJavaController {
+   @GetMapping("/roadmap/java")
+   public String roadmapJava () {
+       return "course";
+   }
+}
+                        </code></pre>
                                             </div>
                                         </div>
 
@@ -108,7 +124,9 @@
                                                 <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
                                             </div>
                                         </div>
+
                                     </div>
+
                                 </div>
                             </div>
                         </div>

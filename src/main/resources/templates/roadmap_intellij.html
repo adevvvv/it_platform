@@ -24,24 +24,15 @@
     <!-- Home -->
     <div class="home">
         <div class="home_background"></div>
-        <div class="home_content">
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Course -->
 
     <div class="course">
         <div class="course_top"></div>
+        <div class="panel_title"><img class="img_commands" src="/images/intellij.svg" alt=""> IntelliJ IDEA</div>
         <div class="container">
             <div class="row row-lg-eq-height">
-
                 <!-- Panels -->
                 <div class="col-lg-9">
                     <div class="tab_panels">
@@ -52,8 +43,8 @@
                                 <div class="row">
                                     <div class="col-lg-9">
                                         <div class="tabs d-flex flex-row align-items-center justify-content-start">
-                                            <div class="tab active">roadmap</div>
-                                            <!--											<div class="tab">задачи</div>-->r
+                                            <div class="tab active">documentation</div>
+                                            <div class="tab">hotkeys</div>
 
                                             <!--											<div class="tab">вопросы</div>-->
                                         </div>
@@ -64,14 +55,10 @@
 
                         <!-- Description -->
                         <div class="tab_panel description active">
-                            <div class="panel_title">Intellij</div>
-                            <div class="panel_text">
-                                <p>Здесь будет описание.</p>
-                            </div>
+                            <div class="panel_title">Roadmap</div>
 
                             <!-- FAQs -->
                             <div class="faqs">
-                                <div class="panel_title">Roadmap</div>
                                 <div class="accordions">
 
                                     <div class="elements_accordions">
@@ -110,6 +97,67 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab_panel curriculum">
+                            <div class="panel_title">Java</div>
+                            <div class="panel_text">
+                                <p>Здесь будет описание.</p>
+                            </div>
+
+                            <!-- FAQs -->
+                            <div class="faqs">
+                                <div class="panel_title">Roadmap</div>
+                                <div class="accordions">
+
+                                    <div class="elements_accordions">
+
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №1</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №2</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                                <pre><code class="language-java">
+@Controller
+public class RoadmapJavaController {
+   @GetMapping("/roadmap/java")
+   public String roadmapJava () {
+       return "course";
+   }
+}
+                        </code></pre>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №3</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
