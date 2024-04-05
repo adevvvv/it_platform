@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="/styles/course.css">
     <link rel="stylesheet" type="text/css" href="/styles/course_responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
 
@@ -43,7 +47,8 @@
             <div class="row row-lg-eq-height">
 
                 <!-- Panels -->
-                <div class="col-lg-9">
+                <div class="col-lg-11">
+                    <div class="panel_title"><img class="img_commands" src="/images/git.svg" alt=""> Git</div>
                     <div class="tab_panels">
 
                         <!-- Tabs -->
@@ -53,7 +58,7 @@
                                     <div class="col-lg-9">
                                         <div class="tabs d-flex flex-row align-items-center justify-content-start">
                                             <div class="tab active">roadmap</div>
-                                            <!--											<div class="tab">задачи</div>-->
+                                            <div class="tab">commands</div>
                                             <!--											<div class="tab">вопросы</div>-->
                                         </div>
                                     </div>
@@ -63,9 +68,8 @@
 
                         <!-- Description -->
                         <div class="tab_panel description active">
-                            <div class="panel_title">Git</div>
                             <div class="panel_text">
-                                <p>Здесь будет описание.</p>
+                                <a href="https://ru.wikipedia.org/wiki/Git">Git </a> <a>— распределённая система управления версиями.</a>
                             </div>
 
                             <!-- FAQs -->
@@ -109,6 +113,56 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab_panel curriculum">
+
+                            <!-- FAQs -->
+                            <div class="faqs">
+                                <div class="panel_title">Commands</div>
+                                <div class="accordions">
+
+                                    <div class="elements_accordions">
+
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №1</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №2</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                                <pre><code class="language-bash">docker-compose </code></pre>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №3</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

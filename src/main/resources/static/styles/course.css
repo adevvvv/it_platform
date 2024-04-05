@@ -1169,7 +1169,7 @@ section
 	height: 100%;
 	-webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
-    padding-top: 49px;
+    padding-top: 5px;
     padding-bottom: 25px;
 }
 /* Fade in tabs */
@@ -1192,6 +1192,14 @@ section
 	font-size: 20px;
 	color: rgba(0,0,0,0.8);
 	font-weight: 700;
+}
+.panel_title_text
+{
+	font-family: Consolas;
+	font-size: 20px;
+	color: rgba(0,0,0,0.8);
+	font-weight: 700;
+	margin-top: 20px;
 }
 .panel_text
 {
@@ -2078,5 +2086,8 @@ section
 .img_commands
 {
 width: 50px;
-margin-left: 400px;
+}
+.img_commands_testng
+{
+width: 80px;
 }

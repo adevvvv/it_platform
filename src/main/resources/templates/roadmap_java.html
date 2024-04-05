@@ -13,11 +13,8 @@
     <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="/styles/course.css">
     <link rel="stylesheet" type="text/css" href="/styles/course_responsive.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -48,9 +45,8 @@
         <div class="course_top"></div>
         <div class="container">
             <div class="row row-lg-eq-height">
-
-                <!-- Panels -->
-                <div class="col-lg-9">
+                <div class="col-lg-11">
+                    <img class="img_commands" src="/images/java.svg" alt="">
                     <div class="tab_panels">
 
                         <!-- Tabs -->
@@ -59,8 +55,8 @@
                                 <div class="row">
                                     <div class="col-lg-9">
                                         <div class="tabs d-flex flex-row align-items-center justify-content-start">
-                                            <div class="tab active">документация</div>
-<!--                                            <div class="tab">commands</div>-->
+                                            <div class="tab active">roadmap</div> 
+
                                             <!--											<div class="tab">вопросы</div>-->
                                         </div>
                                     </div>
@@ -70,14 +66,13 @@
 
                         <!-- Description -->
                         <div class="tab_panel description active">
-                            <div class="panel_title">Java</div>
                             <div class="panel_text">
-                                <p>Здесь будет описание.</p>
+                                <a href="https://ru.wikipedia.org/wiki/Java">Java</a><a> - строго типизированный объектно-ориентированный язык программирования общего назначения, разработанный компанией Sun Microsystems (в последующем приобретённой компанией Oracle).</a>
                             </div>
+                            <div class="panel_title_text">Roadmap</div>
 
                             <!-- FAQs -->
                             <div class="faqs">
-                                <div class="panel_title">Roadmap</div>
                                 <div class="accordions">
 
                                     <div class="elements_accordions">
@@ -102,15 +97,6 @@
                                                 <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
                                                 <br>
                                                 <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
-                                                <pre><code class="language-java">
-@Controller
-public class RoadmapJavaController {
-   @GetMapping("/roadmap/java")
-   public String roadmapJava () {
-       return "course";
-   }
-}
-                        </code></pre>
                                             </div>
                                         </div>
 
@@ -124,9 +110,7 @@ public class RoadmapJavaController {
                                                 <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
