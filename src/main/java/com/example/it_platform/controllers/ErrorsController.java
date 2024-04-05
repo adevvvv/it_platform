@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ErrorsController {
     @GetMapping("/errors")
     public String errors() {
-        return "errors";
+        return "errors/errors_main";
     }
 }
