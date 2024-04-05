@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Course</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lingua project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
+    <link href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="/styles/course.css">
+    <link rel="stylesheet" type="text/css" href="/styles/course_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- Header -->
+    <header th:insert="blocks/header::header"></header>
+
+    <!-- Home -->
+    <div class="home">
+        <div class="home_background"></div>
+        <div class="home_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course -->
+
+    <div class="course">
+        <div class="course_top"></div>
+        <div class="container">
+            <div class="row row-lg-eq-height">
+
+                <!-- Panels -->
+                <div class="col-lg-9">
+                    <div class="tab_panels">
+
+                        <!-- Tabs -->
+                        <div class="course_tabs_container">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="tabs d-flex flex-row align-items-center justify-content-start">
+                                            <div class="tab active">roadmap</div>
+                                            <!--											<div class="tab">задачи</div>-->
+                                            <!--											<div class="tab">вопросы</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="tab_panel description active">
+                            <div class="panel_title">Spring</div>
+                            <div class="panel_text">
+                                <p>Здесь будет описание.</p>
+                            </div>
+
+                            <!-- FAQs -->
+                            <div class="faqs">
+                                <div class="panel_title">Roadmap</div>
+                                <div class="accordions">
+
+                                    <div class="elements_accordions">
+
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №1</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №2</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №3</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <header th:insert="blocks/footer::footer"></header>
+</div>
+
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/styles/bootstrap4/popper.js"></script>
+<script src="/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/plugins/easing/easing.js"></script>
+<script src="/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="/plugins/progressbar/progressbar.min.js"></script>
+<script src="/js/course.js"></script>
+</body>
+</html>
