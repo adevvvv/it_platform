@@ -18,7 +18,10 @@ public class GuideController {
     public String guideSpringFirstApp () {
         return "guide_spring_first-app";
     }
-
+    @GetMapping("/guide/spring/rest-api")
+    public String guideSpringRestApi () {
+        return "guide_spring_rest_api";
+    }
     @GetMapping("/guide/spring/auth-jwt")
     public String guideSpringAuthJwt () {
         return "guide_spring_auth-jwt";

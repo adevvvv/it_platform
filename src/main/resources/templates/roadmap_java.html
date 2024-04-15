@@ -55,8 +55,8 @@
                                 <div class="row">
                                     <div class="col-lg-9">
                                         <div class="tabs d-flex flex-row align-items-center justify-content-start">
-                                            <div class="tab active">roadmap</div> 
-
+                                            <div class="tab active">roadmap</div>
+                                            <div class="tab">syntax</div>
                                             <!--											<div class="tab">вопросы</div>-->
                                         </div>
                                     </div>
@@ -225,6 +225,94 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab_panel curriculum">
+
+                            <!-- FAQs -->
+                            <div class="faqs">
+                                <div class="panel_title">Syntax</div>
+                                <div class="accordions">
+
+                                    <div class="elements_accordions">
+
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Lambda</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a>Без параметров:</a>
+                                                <pre><code class="language-java">@FunctionalInterface
+interface MyName{
+    // абстрактный метод
+    double getPiValue();
+}
+
+public class Main {
+    public static void main( String[] args ) {
+
+    // объявление ссылки на функциональный интерфейс MyName
+    MyName pi;
+// --------------------
+    // лямбда-выражение:
+    pi = () -> 3.1415;
+// --------------------
+    System.out.println("Число Пи = " + pi.getPiValue()); // Вывод: Число Пи = 3.1415
+    }
+}</code></pre>
+
+                                                <a>С параметрами:</a>
+                                                <pre><code class="language-java">@FunctionalInterface
+interface WordReverse {
+    String reverse(String n);
+}
+
+public class Main {
+    public static void main( String[] args ) {
+
+        WordReverse word;
+
+        word = (str) -> {
+
+            StringBuilder result = new StringBuilder();
+            for (int i = str.length()-1; i >= 0 ; i--)
+                result.append(str.charAt(i));
+            return result.toString();
+        };
+        // вызов метода из интерфейса
+        System.out.println("Перевернутое слово = " + word.reverse("Lambda")); // Вывод: Перевернутое слово = adbmaL
+    }
+
+}</code></pre>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Stream API</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a>Stream API - поток данных и последовательные операции над ними.</a>
+                                                <pre><code class="language-bash">docker-compose </code></pre>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion_container">
+                                            <div class="accordion d-flex flex-row align-items-center">
+                                                <div>Тема №3</div>
+                                            </div>
+                                            <div class="accordion_panel">
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Классы</a>
+                                                <br>
+                                                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html">Объекты</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

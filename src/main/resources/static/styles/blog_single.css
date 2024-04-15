@@ -72,6 +72,29 @@ p
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
+ol
+{
+	font-family: Consolas;
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 400;
+	color: rgba(0,0,0,0.6);
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	margin-left: 50px;
+}
+a
+{
+	font-family: Consolas;
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 400;
+	color: rgba(0,0,0,0.6);
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
 p a
 {
 	display: inline;
@@ -1040,27 +1063,11 @@ section
 }
 .blog_quote
 {
-	font-size: 30px;
-	line-height: 1.6;
-	color: #2e21df;
-	padding-left: 37px;
-	padding-right: 60px;
-	margin-top: 46px;
-	margin-bottom: 46px;
-}
-.blog_quote span
-{
-	padding-left: 6px;
-}
-.blog_quote::before
-{
-	display: block;
-	position: absolute;
-	top: 5px;
-	left: 0;
 	font-family: Consolas;
-	content: '\f10d';
-	font-size: 16px;
+	font-size: 20px;
+	color: #000000;
+	font-weight: 700;
+}
 }
 .blog_post_image
 {
@@ -1073,7 +1080,11 @@ section
 }
 .blog_text figure img
 {
-	max-width: 100%;
+	max-width: 70%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+
 }
 .blog_text figure figcaption
 {
