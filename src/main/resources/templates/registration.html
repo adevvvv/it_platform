@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
+  <link href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
+  <link rel="stylesheet" type="text/css" href="/styles/register.css">
+  <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация пользователя</title>
+</head>
+<body>
+<div class="super_container">
+  <!-- Header -->
+  <header th:insert="blocks/header::header"></header>
+
+  <div class="register">
+    <!-- Register Form -->
+    <div class="register_form_container">
+      <div class="register_form_title">Регистрация пользователя</div>
+      <form id="register_form" class="register_form">
+        <div class="row register_row">
+          <div class="col-lg-12">
+            <div class="form-group">
+              <input type="text" class="form_input" id="username" name="username" placeholder="Логин" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form_input" id="password" name="password" placeholder="Пароль" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form_input" id="surname" name="surname" placeholder="Фамилия" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form_input" id="name" name="name" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form_input" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form_input" id="phone" name="phone" placeholder="Телефон" required>
+            </div>
+          </div>
+        </div>
+        <div class="row register_row">
+          <div class="col">
+            <button type="submit" class="form_button trans_200">Зарегистрироваться</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <header th:insert="blocks/footer::footer"></header>
+</div>
+
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/styles/bootstrap4/popper.js"></script>
+<script src="/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/plugins/easing/easing.js"></script>
+<script src="/js/custom.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('register_form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const userData = {};
+        formData.forEach((value, key) => {
+            userData[key] = value;
+        });
+
+        fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        })
+        .then(response => {
+            if (response.ok) {
+                window.location.href = '/profile';
+            } else {
+                console.error('Ошибка при отправке данных');
+            }
+        })
+        .catch(error => console.error('Ошибка:', error));
+    });
+});
+</script>
+</body>
+</html>
