@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
+  <link href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
+  <link rel="stylesheet" type="text/css" href="/styles/login.css">
+  <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+
+<div class="login-container">
+
+  <form th:action="@{/login}" method="post" class="login-form">
+    <div th:if="${error}" class="error-message" th:text="${error}"></div>
+
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" class="form_input" required/>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" class="form_input" required/>
+    </div>
+
+    <button type="submit" class="login-button">Login</button>
+  </form>
+</div>
+
+</body>
+</html>
