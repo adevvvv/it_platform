@@ -10,4 +10,19 @@ public class MainController {
     public String home () {
         return "index";
     }
+
+    @GetMapping("/registration")
+    public String registration () {
+        return "registration";
+    }
+
+    @GetMapping("/login")
+    public String login () {
+        return "login";
+    }
+
+    @GetMapping("/profile")
+    public String profile () {
+        return "profile";
+    }
 }

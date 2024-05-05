@@ -1279,8 +1279,8 @@ section
 }
 .instructor_image_container
 {
-	width: 165px;
-	height: 165px;
+	width: 50px;
+	height: 50px;
 	border: solid 14px #FFFFFF;
 	border-radius: 50%;
 	overflow: hidden;
