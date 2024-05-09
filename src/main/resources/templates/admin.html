@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap4/bootstrap.min.css">
+    <link href="/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="/styles/profile.css">
+    <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
+    <!-- Стили для таблицы -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        /* Стили для поисковой формы */
+        .search-form-container {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .search-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-form input[type="text"] {
+            width: 300px;
+            height: 40px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .search-form button[type="submit"] {
+            height: 40px;
+            padding: 0 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="super_container">
+    <!-- Header -->
+    <header th:include="~{blocks/header::header}"></header>
+    <div class="home">
+        <div class="home_background"></div>
+        <div class="home_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="home_title">Администратор</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Form -->
+    <div class="container search-form-container">
+        <form th:action="@{/admin/search}" method="get" class="search-form">
+            <input type="text" name="query" placeholder="Введите имя пользователя">
+            <button type="submit">Поиск</button>
+        </form>
+    </div>
+    <!-- User List -->
+    <div class="container">
+        <h2>Пользователи</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Логин</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Email</th>
+                <th>Действие</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Thymeleaf loop to populate table with user data -->
+            <tr th:each="user : ${users}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.username}"></td>
+                <td th:text="${user.firstName}"></td>
+                <td th:text="${user.lastName}"></td>
+                <td th:text="${user.email}"></td>
+                <td>
+                    <form action="/admin/deleteUser" method="post">
+                        <input type="hidden" name="userId" th:value="${user.id}" />
+                        <button type="submit">Удалить</button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/styles/bootstrap4/popper.js"></script>
+<script src="/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/plugins/easing/easing.js"></script>
+<script src="/js/custom.js"></script>
+</body>
+</html>
